@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open-Sans';
+}
+
+.info {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    gap: 20px; 
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+.sub-info {
+    text-align: center;
+    max-width: 100%;
+}
+
+.img-bot {
+    max-width: 30%;
+    height: auto;
+}
+
+.btn-adicionar {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-adicionar:hover {
+    background-color: darkblue;
+    transition: all .5s ease-in-out;
+}
+
+.texto {
+    font-weight: 200;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+@media (max-width: 768px) {
+    .info {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .img-bot {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+}
